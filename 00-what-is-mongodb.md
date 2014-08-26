@@ -16,7 +16,7 @@ As a `NoSQL` database, it doesn't describe data in tables, rows and relations.
 Documents
 ---------
 
-Instead it uses the concepts of **documents** for records and **collections** instead of tables.
+Instead it uses the concepts of [**documents**](http://docs.mongodb.org/manual/core/document/) for records and [**collections**](http://docs.mongodb.org/manual/reference/glossary/#term-collection) instead of tables.
 
 
 JSON
