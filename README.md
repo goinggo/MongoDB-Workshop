@@ -1,4 +1,4 @@
 Intro to MongoDB
 ================
 
-Beginner Workshop for MongoDB
+Beginner Workshop for MongoDB.
