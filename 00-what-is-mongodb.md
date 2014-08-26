@@ -4,7 +4,7 @@ What is MongoDB?
 Database
 --------
 
-MongoDB (a play on the word “hu**mongo**us”) is an open source database classified as `NoSQL` and written in C++.
+MongoDB (a play on the word “hu**mongo**us”) is an open source database classified as `NoSQL` and written in `C++`.
 
 
 NoSQL
