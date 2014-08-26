@@ -56,7 +56,7 @@ Horizontal scaling is also provided built in via [sharding](http://docs.mongodb.
 JavaScript
 ----------
 
-When you connect to your database directly (and you know you will have to eventually), there's no crazy syntax to remember. It's just a simple CRUD API and `JavaScript`:
+When you connect to your database directly (and you know you will have to eventually), there's no crazy syntax to remember. It's just a simple [CRUD API](http://docs.mongodb.org/manual/crud/) and `JavaScript`:
 
 ```js
 db.characters.find({ occupation: 'Smuggler' });
