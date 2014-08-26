@@ -63,3 +63,6 @@ db.characters.find({ occupation: 'Smuggler' });
 ```
 
 We all know at least a little bit of `JavaScript`, right?
+
+
+### [Next: Data modeling](01-data-modeling.md) ###
