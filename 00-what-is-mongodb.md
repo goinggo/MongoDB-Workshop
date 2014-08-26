@@ -22,7 +22,7 @@ Instead it uses the concepts of [**documents**](http://docs.mongodb.org/manual/c
 JSON
 ----
 
-Documents have a general structure that most of you are probably familiar with: `JSON`. That means a document has **fields** and **values**. Values can basically be **strings**, **numbers**, **booleans**, arrays of values (denoted by `[]`) and sub-documents (objects denoted by nested `{}`).
+Documents have a general structure that most of you are probably familiar with: `JSON`. That means a document has **fields** and **values**. Values can basically be **strings**, **numbers**, **booleans**, **arrays** of values (denoted by `[]`) and **sub-documents** (objects denoted by nested `{}`).
 
 ```js
 {
