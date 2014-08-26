@@ -29,7 +29,7 @@ Documents have a general structure that most of you are probably familiar with: 
     name: 'Han Solo',
     occupation: 'Smuggler',
     likes: [ 'wisecracks', 'shooting first' ],
-    weapon: { type: 'blaster pistol', amount: 1 },
+    weapon: { amount: 1, type: { id: 3, name: 'blaster pistol', firepower: 'low' } },
     debt: true
 }
 ```
