@@ -99,7 +99,7 @@ db.characters.insert({
 });
 ```
 
-This may be a contrived example, but the point is that relational databases can be tedious to develop on at times.
+This may be a contrived example, but the point is that relational databases can be tedious to develop on at times. Often in those cases, working with a dynamic schema and no-normalization database like `MongoDB` is much nicer.
 
 
 Different structures for different junctures
