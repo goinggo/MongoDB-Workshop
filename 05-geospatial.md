@@ -218,3 +218,6 @@ We can see by explain, a GEO_NEAR_2DSPHERE is taking place and 39 documents were
 	        }
 	    }
 	}).explain()
+
+
+### [Back to: Indexing](04-indexing.md) ###
