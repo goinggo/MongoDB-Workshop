@@ -282,7 +282,9 @@ Like with `$inc`, if the field doesn't exist `$push` will add the field with the
 Exercise
 --------
 
-...
+1. Insert your favorite Star Wars character. Give the character a `name`, `occupation`, `likes` and any other field you think would be appropriate. To avoid conflicting with other students, name your collection in a format similar to `<yourname>_characters`. For me the collection would be `nizar_characters`.
+2. Insert a simple document for a Star Wars character you dislike (I'm looking at you, Jar Jar). Now remove that document!
+3. Update your favorite characters document with additional `likes`, a `species` field (i.e. *Wookie*) and a `moviesAppeared` count field (i.e. the amount of Star Wars movies the character appeared in). Hint: you can use multiple update operators in the same `update()`.
 
 
 ### [Back to: Data modeling](01-data-modeling.md) ###
