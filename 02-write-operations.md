@@ -17,6 +17,9 @@ db  .  characters  .  find()  ;
 `insert()`
 ----------
 
+The `insert()` method inserts documents into a collection.
+
+
 ### Single document ###
 
 In the previous section, we saw a sneak peak of how [`insert()`](http://docs.mongodb.org/manual/reference/method/db.collection.insert/) works. Here's a more basic example of inserting a `characters` document:
