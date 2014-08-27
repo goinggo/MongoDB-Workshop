@@ -68,7 +68,7 @@ The `remove()` method deletes documents from a collection. Here's the basic stru
 db.characters.remove( { occupation: 'Smuggler' } );
 ```
 
-The first argument is called a `query` object. It specifies which documents you want to delete using [query operators](http://docs.mongodb.org/manual/reference/operator/query/), which we will discuss in more detail in the Querying section. For now we will use simple equals in our `query` objects. In these examples, the `query` object matches any document with `occupation` field equal to *Smuggler*.
+The first argument is called a `query` object. It specifies which documents you want to delete using [query operators](http://docs.mongodb.org/manual/reference/operator/query/), which we will discuss in more detail in the [Querying](03-querying.md) section. For now we will use simple equals in our `query` objects. In these examples, the `query` object matches any document with `occupation` field equal to *Smuggler*.
 
 
 ### Multiple documents ###
@@ -287,4 +287,4 @@ Exercise
 3. Update your favorite characters document with additional `likes`, a `species` field (i.e. *Wookie*) and a `moviesAppeared` count field (i.e. the amount of Star Wars movies the character appeared in). Hint: you can use multiple update operators in the same `update()`.
 
 
-### [Back to: Data modeling](01-data-modeling.md) ###
+### [Back to: Data modeling](01-data-modeling.md) | [Next: Querying](03-querying.md) ###
