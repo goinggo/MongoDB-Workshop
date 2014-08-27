@@ -59,7 +59,46 @@ By default, `MongoDB` uses the `_id` field as the primary key for a document in 
 `remove()`
 ----------
 
-...
+The `remove()` method deletes documents from a collection. Here's the basic structure of a `remove()`:
+
+```js
+db.characters.remove( { occupation: 'Smuggler' } );
+```
+
+The first argument is called a `query` object. It specifies which documents you want to delete using [query operators](http://docs.mongodb.org/manual/reference/operator/query/), which we will discuss in more detail in the Querying section. For now we will use simple equals in our `query` objects. In these examples, the `query` object matches any document with `occupation` field equal to *Smuggler*.
+
+
+### Multiple documents ###
+
+By default, a call to `remove()` will delete any documents in the collection that match your `query` object:
+
+```js
+// Delete all smugglers
+db.characters.remove( { occupation: 'Smuggler' } );
+```
+
+
+### Single document ###
+
+To delete only a single document that matches the `query` object, send the `justOne` option in the call to `remove()`:
+
+```js
+// Delete a single smuggler
+db.characters.remove(
+    { occupation: 'Smuggler' },
+    { justOne: true }
+);
+```
+
+
+### Delete all documents ###
+
+To delete all documents in a collection, use an empty `query` object:
+
+```js
+// Delete all characters
+db.characters.remove( {} );
+```
 
 
 `update()`
