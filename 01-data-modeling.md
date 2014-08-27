@@ -108,4 +108,4 @@ Different structures for different junctures
 There may be some situations in which it's more appropriate to treat your data relationally and make multiple reads to the database to build your compose your application's data model. Evaluate the needs of your projects on a case by case basis!
 
 
-### [Back to: What is MongoDB?](00-what-is-mongodb.md) ###
+### [Back to: What is MongoDB?](00-what-is-mongodb.md) | [Next: Write operations](02-write-operations.md) ###
