@@ -689,3 +689,4 @@ We can see by explain, a IXSCAN is taking place but this time 1 document was sea
 	db.student.find({"region":"Gulf Of Mexico"}).sort({"condition.date":-1}).limit(1).explain()
 
 
+### [Back to: Querying](03-querying.md) | [Next: Geospatial](05-geospatial.md) ###
