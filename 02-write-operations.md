@@ -36,7 +36,7 @@ You can also insert arrays of documents to insert multiples with a single call:
 ```js
 db.characters.insert(
     [
-        { name: 'Lando Calrissian', occupation: 'Cloud  City Administrator' },
+        { name: 'Lando Calrissian', occupation: 'Cloud City Administrator' },
         { name: 'Admiral Ackbar' },
         { _id: 1, name: 'Obi-Wan Kenobi' }
     ]
