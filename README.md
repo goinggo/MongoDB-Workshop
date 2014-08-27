@@ -12,3 +12,4 @@ Table of Contents
 - [Write operations](02-write-operations.md)
 
 - [Indexing](04-indexing.md)
+- [Geospatial](05-geospatial.md)

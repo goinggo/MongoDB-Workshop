@@ -34,8 +34,7 @@
 ![Index For Covered Query](04-images/index-for-covered-query.png)
 **Diagram of a query that uses only the index to match the query criteria and return the results. MongoDB does not need to inspect data outside of the index to fulfill the query.**
 
-Index Types
--------------------------
+## Index Types
 There are a few different types of indexes you can create.
 
 ### Default _id index
@@ -674,19 +673,19 @@ We can see by explain, a IXSCAN is taking place but this time 1 document was sea
 
 **Part A:** Perform a _find_ against the _name_ field for the value _"Station 42365 - Ursa"_ from your student database. The run an explain and look at the results.
 
-	db.teacher.find()
-	db.teacher.find({"name":"Station 42365 - Ursa"})
-	db.teacher.find({"name":"Station 42365 - Ursa"}).explain()
+	db.student.find()
+	db.student.find({"name":"Station 42365 - Ursa"})
+	db.student.find({"name":"Station 42365 - Ursa"}).explain()
 
 **Part B:** Create a single field index on the _name_ field and run the query again. Run an explain to verify the index is being used and the number of scanned documents is 1.
 
-	db.teacher.createIndex({"name":1})
-	db.teacher.find({"name":"Station 42365 - Ursa"}).explain()
+	db.student.createIndex({"name":1})
+	db.student.find({"name":"Station 42365 - Ursa"}).explain()
 
 **Part C:** Create a compound index on the _region_ field and _condition.date_ field. Create a query to find the most recently updated station for the _"Gulf Of Mexico"_. Verify the index is used.
 
-	db.teacher.createIndex({"region":1, "condition.date": -1})
-	db.teacher.find({"region":"Gulf Of Mexico"}).sort({"condition.date":-1}).limit(1)
-	db.teacher.find({"region":"Gulf Of Mexico"}).sort({"condition.date":-1}).limit(1).explain()
+	db.student.createIndex({"region":1, "condition.date": -1})
+	db.student.find({"region":"Gulf Of Mexico"}).sort({"condition.date":-1}).limit(1)
+	db.student.find({"region":"Gulf Of Mexico"}).sort({"condition.date":-1}).limit(1).explain()
 
 
