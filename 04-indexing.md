@@ -6,7 +6,7 @@
 * Without indexes every document must be scanned (Collection Scan).
 * Indexes can be applied to a set of fields and sub-fields.
 * If the data needed is in the index, it can be used directly for results.
-* Indexes use a B-tree daya structure.
+* Indexes use a B-tree data structure.
 
 ![Index With Query](04-images/index-with-query.png)
 **Diagram of a query selecting documents using an index. MongoDB narrows the query by scanning the range of documents with values of score less than 30.**
@@ -18,7 +18,7 @@
 * How it works
     * Query plans are run against several indexes in parallel.
     * Results are recorded in one or more buffers.
-    * A plan is seleted once results are returned or a plan is determined to be superior.
+    * A plan is selected once results are returned or a plan is determined to be superior.
     * The selected index is then uses for future queries.
     * Over time query plans are deleted and re-evaluated.
 
@@ -508,7 +508,7 @@ We can see by explain, a IXSCAN is taking place and only 2536 document was scann
 	    }
 	}
 
-The query optimizer is smart enough to know the compund index we created can be used.
+The query optimizer is smart enough to know the compound index we created can be used.
 
 ### Performing a range query can be tricky:
 
